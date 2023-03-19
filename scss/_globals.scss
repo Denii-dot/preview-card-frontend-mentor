@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  display: grid;
+  place-content: center;
+  height: 100%;
+  margin: 1rem;
+  color: $colour-neutral-400;
+  background-color: $colour-secondary;
+  font-family: $font-family-base;
+  font-weight: $font-regular;
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.flex-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.button {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25em 1.5em;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: $colour-primary;
+  color: $colour-neutral-100;
+  font-weight: $font-bold;
+  font-size: 1rem;
+  &:hover,
+  &:focus {
+    background-color: $colour-primary-dark;
+  }
+}

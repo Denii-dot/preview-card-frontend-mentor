@@ -1,0 +1,37 @@
+.product {
+  display: grid;
+  background-color: $colour-neutral-100;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  max-width: 45rem;
+  &__content {
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem;
+    @media (min-width: $desktop-version){
+        padding: 2rem;
+    }
+  }
+
+  &__category {
+    font-size: 0.8125rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-family: $font-family-accent;
+    color: $colour-neutral-900;
+  }
+
+  &__price{
+    font-size: 2rem;
+    font-family: $font-family-accent;
+    color: $colour-primary;
+  }
+
+  @media (min-width: $desktop-version) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
